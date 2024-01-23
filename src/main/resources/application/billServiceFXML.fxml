@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="394.0" prefWidth="317.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BillServiceController">
+   <children>
+      <Label layoutX="17.0" layoutY="21.0" text="Booking ID:" textAlignment="RIGHT" />
+      <Label layoutX="17.0" layoutY="94.0" text="Guest Name:" />
+      <Label layoutX="17.0" layoutY="128.0" text="Rooms booked:" />
+      <Label layoutX="17.0" layoutY="274.0" text="Discount:" />
+      <Label layoutX="17.0" layoutY="310.0" text="Total rate per night:" textAlignment="RIGHT" />
+      <Label fx:id="lblTotal" layoutX="137.0" layoutY="310.0" text="-" />
+      <Label fx:id="lblName" layoutX="137.0" layoutY="94.0" text="-" />
+      <TextField fx:id="txtID" layoutX="137.0" layoutY="17.0" prefHeight="26.0" prefWidth="42.0" />
+      <TextField fx:id="txtDiscount" layoutX="137.0" layoutY="270.0" prefHeight="26.0" prefWidth="42.0" text="0" />
+      <Label layoutX="181.0" layoutY="274.0" text="\%" />
+      <TableView fx:id="tvTable" layoutX="17.0" layoutY="153.0" prefHeight="108.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="cRoom" prefWidth="59.0" text="Room" />
+          <TableColumn fx:id="cType" prefWidth="70.0" text="type" />
+            <TableColumn fx:id="cRate" prefWidth="70.0" text="Rate" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSeach" layoutX="217.0" layoutY="17.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Button fx:id="btnDiscount" layoutX="217.0" layoutY="270.0" mnemonicParsing="false" onAction="#addDiscount" text="Add discount" />
+      <Button fx:id="btnClose" layoutX="98.0" layoutY="343.0" mnemonicParsing="false" onAction="#close" text="Close" />
+      <Button fx:id="btnClear" layoutX="169.0" layoutY="343.0" mnemonicParsing="false" onAction="#btnClear" text="Clear" />
+      <Label layoutX="17.0" layoutY="66.0" text="Date:" />
+      <Label fx:id="lblDate" layoutX="137.0" layoutY="66.0" text="-" />
+   </children>
+</AnchorPane>

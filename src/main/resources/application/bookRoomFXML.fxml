@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="193.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BookRoomController">
+   <children>
+      <Label layoutX="55.0" layoutY="23.0" text="Number of guests:" textAlignment="RIGHT" />
+      <Label layoutX="65.0" layoutY="53.0" text="Number of days:" />
+      <DatePicker fx:id="dateSelected" layoutX="167.0" layoutY="109.0" prefHeight="26.0" prefWidth="149.0" />
+      <TextField fx:id="txtDays" layoutX="167.0" layoutY="48.0" prefHeight="26.0" prefWidth="30.0" text="1" />
+      <Label layoutX="126.0" layoutY="114.0" text="Date:" />
+      <Label layoutX="14.0" layoutY="82.0" text="Number of rooms to book:" />
+      <TextField fx:id="txtRooms" layoutX="167.0" layoutY="78.0" prefHeight="26.0" prefWidth="30.0" text="1" />
+      <Slider fx:id="sldGuests" blockIncrement="1.0" layoutX="167.0" layoutY="12.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="16.0" prefWidth="149.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
+      <Button fx:id="btnSelectRoom" layoutX="127.0" layoutY="145.0" mnemonicParsing="false" onAction="#selectRoom" text="Select rooms" />
+   </children>
+</AnchorPane>

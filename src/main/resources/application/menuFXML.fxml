@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <children>
+      <Button fx:id="btnBook" mnemonicParsing="false" onAction="#bookRoom" prefHeight="75.0" prefWidth="291.0" text="Book room" />
+      <Button fx:id="btnBill" mnemonicParsing="false" onAction="#bill" prefHeight="75.0" prefWidth="291.0" text="Bill service" />
+      <Button fx:id="btnBookings" mnemonicParsing="false" onAction="#bookings" prefHeight="75.0" prefWidth="291.0" text="Current bookings" />
+      <Button fx:id="btnAvailable" mnemonicParsing="false" onAction="#available" prefHeight="75.0" prefWidth="291.0" text="Available rooms" />
+      <Button fx:id="btnExit" mnemonicParsing="false" onAction="#exit" prefHeight="75.0" prefWidth="291.0" text="Exit" />
+   </children>
+</VBox>
